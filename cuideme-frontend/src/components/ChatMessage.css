@@ -1,0 +1,103 @@
+.message {
+  display: flex;
+  margin-bottom: 0.5rem;
+  flex-direction: column; /* Permite que a sugestão fique abaixo */
+}
+
+.message.patient {
+  align-items: flex-start; /* Mensagens do paciente à esquerda */
+}
+
+.message.professional {
+  align-items: flex-end; /* Mensagens do profissional à direita */
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 0.75rem 1rem;
+  border-radius: 18px;
+  position: relative;
+  word-wrap: break-word; /* Garante que o texto quebre */
+}
+
+.message.patient .message-bubble {
+  background-color: #e5e5ea;
+  color: black;
+}
+
+.message.professional .message-bubble {
+  background-color: #007aff;
+  color: white;
+}
+
+.message-text {
+  margin: 0;
+  padding-right: 4rem; 
+}
+
+.message-time {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 0.7rem;
+  color: inherit;
+  opacity: 0.7;
+}
+
+/* ### NOVOS ESTILOS PARA A SUGESTÃO DA IA ### */
+
+.ai-suggestion-box {
+  max-width: 65%; /* Um pouco menor que a bolha da mensagem */
+  margin-top: 4px;
+  margin-left: 10px; /* Leve recuo para indicar que é uma resposta */
+  padding: 0.75rem;
+  border: 1px dashed #007aff;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.suggestion-header {
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #007aff;
+  margin-bottom: 8px;
+}
+
+.suggestion-text {
+  margin: 0 0 12px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+.suggestion-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.suggestion-button {
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid #007aff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.send-suggestion {
+  background-color: #007aff;
+  color: white;
+}
+
+.send-suggestion:hover {
+  background-color: #0056b3;
+}
+
+.edit-suggestion {
+  background-color: transparent;
+  color: #007aff;
+}
+
+.edit-suggestion:hover {
+  background-color: rgba(0, 122, 255, 0.1);
+}

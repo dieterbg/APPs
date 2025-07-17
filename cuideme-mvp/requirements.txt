@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+httpx
+sqlalchemy
+psycopg2-binary
+alembic
+fastapi-cors
+google-generativeai
+# ... (bibliotecas existentes)
+google-generativeai
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart
